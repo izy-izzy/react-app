@@ -2,7 +2,7 @@ import React, { Component, HTMLAttributes } from 'react';
 import './Button.scss';
 
 export interface IButtonProps{
-  copy: string;
+  copy?: string;
 }
 
 export class Button extends Component<IButtonProps & HTMLAttributes<HTMLButtonElement>, {}> {
@@ -16,7 +16,7 @@ export class Button extends Component<IButtonProps & HTMLAttributes<HTMLButtonEl
   }
 }
 
-export class DangerButton extends Button {
+export class SecondaryButton extends Button {
   render() {
     return <Button className='btn btn-secondary' onClick={this.props.onClick} copy={this.props.copy}></Button>
   }
