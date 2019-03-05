@@ -4,8 +4,9 @@ $body-bg: white;
 $page-background: #282c34;
 $margin: 20px;
 
-h1 {
-    color : silver;
+h1,
+h2 {
+  color: silver;
 }
 
 // Import Bootstrap and its default variables
