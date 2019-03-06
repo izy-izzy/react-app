@@ -1,12 +1,5 @@
-import { ACTIONS } from '../actions/actions';
-
-export interface ISystemState {
-  value: number;
-}
-
-let initialState: ISystemState = {
-  value: 0
-};
+import { ACTIONS } from './../actions/actions';
+import initialState, { ISystemState } from '../definitions/definitions';
 
 function valueReducer(state: ISystemState = initialState, action: any) {
   switch (action.type) {

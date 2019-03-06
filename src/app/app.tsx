@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './App.scss';
+import './app.scss';
 import { Route, BrowserRouter as Router, NavLink } from 'react-router-dom';
-import { Home } from './pages/home';
-import About from './pages/about';
-import { AboutSubMenu } from './global/submenu/aboutsubmenu';
-import { AboutSomething } from './pages/aboutsomething';
-import { AboutNothing } from './pages/aboutnothing';
+import { Home } from '../pages/home/home';
+import About from '../pages/about/about';
+import { AboutSubMenu } from '../global/submenu/aboutsubmenu';
+import { AboutSomething } from '../pages/about/something/aboutsomething';
+import { AboutNothing } from '../pages/about/nothing/aboutnothing';
 
 class App extends Component {
   render() {

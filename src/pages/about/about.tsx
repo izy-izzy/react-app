@@ -1,9 +1,9 @@
 import './about.scss';
 import React, { Component, HTMLAttributes } from 'react';
 import { connect } from 'react-redux';
-import { Button } from '../global/Button';
-import changeValueRandomly from '../actions/actions';
-import { ISystemState } from '../reducers/rootReducer';
+import { Button } from '../../global/Button';
+import changeValueRandomly from '../../store/actions/actions';
+import { ISystemState } from '../../store/definitions/definitions';
 
 declare interface ISpecialProps {
   value: number;

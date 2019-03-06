@@ -3,11 +3,11 @@ import 'react-app-polyfill/ie11';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import valueReducer from './reducers/rootReducer';
+import valueReducer from './store/reducers/rootReducer';
+import App from './app/app';
 
 const store = createStore(valueReducer);
 
