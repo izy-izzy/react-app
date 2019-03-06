@@ -1,13 +1,4 @@
-// Override default variables before the import
-$body-bg: white;
+@import './styles/base.scss';
 
-$page-background: #282c34;
-$margin: 20px;
-
-h1,
-h2 {
-  color: silver;
-}
-
-// Import Bootstrap and its default variables
+// override bootstrap
 @import '~bootstrap/scss/bootstrap.scss';

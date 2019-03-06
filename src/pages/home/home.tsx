@@ -1,7 +1,9 @@
 import './home.scss';
 import logo from './../../assets/images/logo.svg';
-import { Button, SecondaryButton, InfoButton } from '../../global/Button';
+import { Button } from '../../global/buttons/button/Button';
 import React, { Component } from 'react';
+import { SecondaryButton } from '../../global/buttons/secondarybutton/secondarybutton';
+import { TernaryButton } from '../../global/buttons/ternarybutton/ternarybutton';
 
 export class Home extends Component {
   handleClick = async () => {
@@ -30,7 +32,7 @@ export class Home extends Component {
             copy="Secondary button"
           />
           <br />
-          <InfoButton onClick={this.handleClickInfo} copy="Info button" />
+          <TernaryButton onClick={this.handleClickInfo} copy="Info button" />
           <br />
         </header>
       </div>

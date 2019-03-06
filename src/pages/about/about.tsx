@@ -1,7 +1,7 @@
 import './about.scss';
 import React, { Component, HTMLAttributes } from 'react';
 import { connect } from 'react-redux';
-import { Button } from '../../global/Button';
+import { Button } from '../../global/buttons/button/Button';
 import changeValueRandomly from '../../store/actions/actions';
 import { ISystemState } from '../../store/definitions/definitions';
 

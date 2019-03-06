@@ -1,0 +1,12 @@
+@import './variables.scss';
+@import './colors.scss';
+
+h1,
+h2 {
+  color: $silver;
+  font-weight: $font-weight-light;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
