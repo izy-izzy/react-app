@@ -1,6 +1,6 @@
 import './home.scss';
 import logo from './../../assets/images/logo.svg';
-import { Button } from '../../global/buttons/button/Button';
+import { Button } from '../../global/buttons/button/button';
 import React, { Component } from 'react';
 import { SecondaryButton } from '../../global/buttons/secondarybutton/secondarybutton';
 import { TernaryButton } from '../../global/buttons/ternarybutton/ternarybutton';

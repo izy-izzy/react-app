@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../button/Button';
+import { Button } from '../button/button';
 
 export class SecondaryButton extends Button {
   render() {

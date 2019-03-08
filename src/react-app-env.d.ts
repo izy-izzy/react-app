@@ -1,6 +1,7 @@
 /// <reference types="node" />
 /// <reference types="react" />
 /// <reference types="react-dom" />
+/// <reference path="./../node_modules/@types/d3"/>
 
 declare namespace NodeJS {
   interface ProcessEnv {

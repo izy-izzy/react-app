@@ -1,0 +1,15 @@
+@import './../../global/custom.scss';
+
+.linechart {
+  padding: 50px;
+  background: $chart-background;
+}
+
+.line {
+  stroke-width: 2;
+  fill: none;
+}
+
+.axis path {
+  stroke: black;
+}

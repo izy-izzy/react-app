@@ -1,5 +1,5 @@
 import React, { Component, HTMLAttributes } from 'react';
-import './Button.scss';
+import './button.scss';
 
 export interface IButtonProps {
   copy?: string;
@@ -9,7 +9,11 @@ export class Button extends Component<
   IButtonProps & HTMLAttributes<HTMLButtonElement>,
   {}
 > {
-  getClassList = () => {
+  constructor(props: IButtonProps) {
+    super(props);
+  }
+
+  private getClassList = () => {
     return this.props.className ? this.props.className : 'btn btn-primary';
   };
 
@@ -21,19 +25,3 @@ export class Button extends Component<
     );
   }
 }
-
-export class SecondaryButton extends Button {
-  render() {
-    return (
-      <Button
-        className="btn btn-secondary"
-        onClick={this.props.onClick}
-        copy={this.props.copy}
-      />
-    );
-  }
-}
-
-export const InfoButton = ({ onClick, copy }) => {
-  return <Button className={'btn-info btn'} onClick={onClick} copy={copy} />;
-};
